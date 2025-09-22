@@ -1,0 +1,62 @@
+DROP TABLE IF EXISTS Shippings;
+
+
+DROP TABLE IF EXISTS Orders;
+
+
+DROP TABLE IF EXISTS Customers;
+
+
+DROP TABLE IF EXISTS Clientes;
+
+
+
+
+
+--CRIANDO TABELA
+
+
+CREATE TABLE Clientes (
+
+
+  id INTEGER PRIMARY KEY,
+
+    nome TEXT,
+
+    idade INTEGER
+
+
+);
+
+--(C) INSERINDO VALORES NA NOSSA TABELA
+
+
+INSERT INTO Clientes (id, nome, idade) VALUES (1, "Ana", 25), (2, "Carlos", 32), (3, "Benevides", 22), (4, "Ana", 30);
+
+--(R) SELECIONANDO TODOS OS DADOS DA TABELA CLIENTE
+
+--SELECT * FROM Clientes;
+
+--(R) SELECIONANDO CAMPOS ESPECÍFICO DA TABELA CLIENTE
+
+
+--SELECT nome FROM Clientes;
+
+
+
+
+
+--(R) SELECIONANDO CAMPOS E ORDENANDO NA TABELA CLIENTE
+
+
+--SELECT nome, idade FROM Clientes ORDER BY nome ASC;
+
+
+
+
+
+--(R) SELECIONANDO UMA QUANTIDADE ESPECÍFICA NA TABELA CLIENTE
+
+
+--SELECT nome, idade FROM Clientes LIMIT 1;
+
